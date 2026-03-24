@@ -24,6 +24,6 @@ import tutorialRoutes from './routers/tutorialRouter.js';
 app.use("/tutorial/api",tutorialRoutes);
 
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT || 3000 ,()=>{
     console.log("server running on 5000");
 })
